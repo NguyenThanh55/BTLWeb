@@ -1,0 +1,1025 @@
+/*Phần IPPG & footer, Trang chu, Sản phẩm*/
+* {
+    box-sizing: border-box;
+   
+}
+
+p {
+    font-size: 20px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+/*Trang chủ*/
+ul.menu {
+    width: 100%;
+    height: 72px;
+    top: 0;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 10px 0 #424242;
+    z-index: 7;
+    background-color:white ;
+    justify-content: space-around;
+    position: fixed;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+
+.menu > li {
+    width: 16.67%;
+}
+
+ul.menu > li > a {
+    color: black;
+    display: block;  
+    text-align: center !important;
+}
+
+.menu > li > a img {
+    width: 100%;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.menu > li > a:hover {
+    color:rgb(126,1,1);
+    z-index: 2;
+}
+
+li.sub {
+    position: relative;
+}
+
+ul.subcontent {
+    display: none;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+
+.subcontent > li > a {
+    color:black;
+    width: 100%;
+}
+
+.sub:hover .subcontent {
+    display: block; 
+    position: absolute;
+    background-color: rgb(126, 1, 1);
+}
+
+.subcontent > li > a:hover {
+    color:white;
+}
+
+/*Trang giới thiệu*/
+div.content-gt {
+    color: white;
+}
+
+div.content-gt > div > img {
+    width: 100%;
+}
+
+div.image-gt {
+    height: 200px; 
+    font-size: 20px;
+}
+
+
+div.tieude-gt {
+    font-size: 20px;
+}
+
+div.tieude-gt > h1 {
+    position: absolute; 
+    top: 200px;
+    left: 50%;
+    width: 600px;
+    padding: 2px; 
+    font-weight: bold;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+div.tieude-gt hr {
+    width:100px; 
+    size: 1px;
+    position: absolute; 
+    top: 330px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0.5px solid white;
+}
+
+div.content-gt {
+    font-size: 20px;
+}
+
+div.content-gt p:first-child {
+    position: absolute; 
+    text-align: justify;
+    top: 350px;
+    left: 28%; 
+    width: 700px;
+    font-size: 20px;
+}
+
+
+
+
+text { 
+    font-weight: 900;
+    font-family: 'VIEGotham';
+}
+section > h3 {
+    color: #000;
+    font-size: 36px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 52px;
+    text-align: center;
+}
+
+.item-value {
+    display: flex;
+}
+
+
+div.copy {
+    max-width: 420px;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+}
+div.copy h4 {
+    color: #474747;
+    font-size: 30px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+div.copy p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #424242;
+}
+div.item-value figure {
+    width: 50%;
+    margin: 0;
+}
+.image-content img {
+    width: 100%;
+    vertical-align: middle;
+}
+.banner {
+    padding-top: 0;
+}
+
+section.IPPG {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section.IPPG img {
+    width: 100%;
+}
+section.IPPG h3 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+section.IPPG h4 {
+    text-align: center;
+}
+
+section.IPPG p {
+    margin-bottom: 55px;
+    padding: 0 14% !important;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+} 
+section.IPPG p.IPPG-gt {
+    padding: 0 100px;
+}
+section.IPPG div.IPPG-item {
+    padding: 0 60px;
+}
+
+@media screen and (max-width: 410px) {
+    .content-gt1 {
+        display: none;
+    }
+
+    div.content-gt > div > img {
+        width: 292%;
+    }
+
+    
+    hr {
+        display: none;
+    }
+    
+    .values {
+        width: 986px;
+    }
+
+    section > h3 {
+        margin-left: 300px;
+    }
+
+    section.IPPG p.IPPG-gt {
+        width: 292%;
+    }
+
+    section.IPPG h3 {
+        margin-left: 300px;
+
+    }
+
+    section.IPPG div.IPPG-item {
+        width: 1000px;
+    }
+
+    div.rolex-IPPG-text {
+        width: 1000px;
+    }
+
+    div.rolex-IPPG {
+        width: 1060px;
+    }
+
+    ul.thanhcuoi {
+        width: 1080px;
+    }
+
+    .gt-thanhcuoi {
+        width: 1080px;
+    }
+}
+
+/*Trang rolex*/
+div#page-rolex {
+    padding: 0 90px;
+}
+.rolex-menu {
+    display: flex;
+    align-items: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    justify-content: space-around;
+    width:100%;
+    margin-top: 72px;
+} 
+
+.rolex-menu > li {
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.rolex-menu > li > a img {
+    width: 100%;
+}
+
+.rolex-menu > li > a {
+    display: block;
+    padding: 20px;
+    color: black;
+}
+
+.rolex-menu > li > a:hover {
+    color:rgb(57, 236, 57);
+}
+
+
+/*Phần Rolex tại DAFC*/
+div.image {
+    text-align: center;
+}
+
+div.image > img {
+    width: 100%;
+    height: 400px;
+}
+
+div.image > h1 {
+    line-height: 34px;
+}
+
+div.image > h2,p,h3,h1 {
+    text-align: center;
+}
+
+div.image p {
+    width: 70%;
+    text-align: justify;
+}
+
+div.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.item-con {
+    width: 33.33%;
+    padding: 5px 20px;
+}
+
+div.item-con > div:hover {
+    margin-top: 10px;
+    transition: 0.4s;
+    border-radius: 10px;
+    border:black 1px solid;
+}
+
+
+div.item-con img {
+    width: 100%;
+}
+
+div.item-con > div {
+    text-align: center;
+}
+
+div.item-con h3,p {
+    /*text-align: justify;*/
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+div.item-con-info-lopngoai {
+    background-color: #000;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+div.item-con:hover div.item-con-info-lopngoai {
+    display: block;
+}
+
+div.item-con-info {
+    display: flex;
+    background-color: rgb(126, 1, 1);
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.item-con-info > div {
+    width: 50%;
+}
+
+div.item-con-info-image {
+    background-color: white;
+}
+
+div.item-con-info-image > img {
+    width: 100%;
+}
+
+div.item-con-info-con {
+    color: white;
+    height: 50%;
+    margin: auto 0;
+}
+
+div.item-con-info-con > h2 {
+    text-align: center;
+}
+
+div.collects h4 {
+    font-size: 25px;
+}
+
+.collects {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.collects h4 {
+    text-align: left;
+}
+
+.collect {
+    display: flex;
+    font-size: 5px;
+}
+
+.collect div {
+    width: 45%;
+}
+
+.collect .nam {
+    padding-right: 25px;
+    width: 50%;
+}
+
+.collect .nu {
+    padding-left: 25px;
+    padding-right: 0;
+    width: 50%;
+}
+
+
+.collect img {
+    width: 100%;
+    height: 346.75px;
+}
+
+.vang > img {
+    width: 100%;
+    height: 347.4px;
+}
+
+.vang h4 {
+    font-size: 5px;
+}
+
+.chung h4 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 8px;
+}
+
+.chung p {
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.chung > img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*Phần đồng hồ mới*/
+div.new-content div.image {
+    margin: 20px 10px 40px;
+}
+
+div.new-item {
+    margin:0 auto ;
+    width: 70%;
+    align-items: center;
+}
+
+div.new-item img {
+    width: 100%;
+    background-color: rgb(245, 245, 236);
+}
+
+div.new-item1 {
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.new-itemcon {
+    width: 30%;
+    margin: 10px 32px;
+}
+div.new-item1 img {
+    width: 100%;
+    background-color: rgb(245, 245, 236);
+}
+.active {
+    color: rgb(86, 221, 81) !important;
+}
+
+a#goOnTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.8;
+    z-index: 100;
+}
+figure.image-content img {
+    width: 100%;
+}
+figure.image-content {
+    width: 50%;
+    padding-top: 40px ;
+}
+div.color-font {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*Phần lịch sử*/
+.content-left {
+    width: 50%;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.content-right {
+    width: 50%;
+    padding-left: 20px;
+    text-align: center;
+}
+div.item-value-2 {
+    margin: 0 200px;
+}
+div.background-color{
+    background-color: black;
+}
+figure.image-special {
+    background-image: url(../images/baoduong6.jpg);
+}
+div.item-value-1 {
+    padding: 20px;
+}
+div.item-value-3 {
+    width: 100%;
+}
+div.item-value-3 img {
+    width: 100%;
+}
+figure.image-special1 {
+    background-image: url(../images/lichsu5.jpg);
+}
+
+/* Trang liên hệ*/
+div.lienhe {
+    width: 100%;
+    height: 0;
+    padding-bottom: 48.7625%;
+    margin-top: 72px;
+    position: relative;
+}
+hr{
+    border: black 2px solid ;
+}
+div.lienhe img {
+    width: 100%;
+}
+div.thongtinlienhe {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    max-width: 750px;
+    width: 100%;
+}
+
+div.thongtinlienhe > h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+}
+div.thongtinlienhe > p {
+    margin-top: 10px;
+    padding: 0;
+    border: 0;
+}
+.maunen {
+    background-color: white;
+    display: inline;
+}
+div.contact {
+    display: flex;
+    width: 80%;
+    margin: 63px auto;
+}
+div.contact > div {
+    width: 50%;
+    padding: 0 10px;
+}
+div.contact-left > p {
+    text-align: justify !important;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px;
+}
+div.line-form {
+    margin: 0 -10px;
+    display: flex;
+}
+div.col-6 {
+    width: 50%;
+    padding: 5px;
+}
+
+div.col-6 > label {
+    font-style: normal;
+    padding: 9px 0;
+    display: block;
+}
+
+div.col-6 > input {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    height: 58px;
+    line-height: 1.6;
+    padding: 14px 25px;
+    color: #474747;
+    border: 1px solid #7f2d46;
+    background: rgb(222, 222, 222);
+    border-color: #c0c0c0;
+}
+
+div.col-6 select {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    height: 58px;
+    line-height: 1.6;
+    padding: 14px 25px;
+    color: #474747;
+    border: 1px solid #7f2d46;
+    background: rgb(222, 222, 222);
+    border-color: #c0c0c0;
+}
+
+div.list > span {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    font-weight: 300;
+    background: rgb(222,222,222);
+    color: #474747;
+} 
+
+div.line-form-nd > label{
+    display: block;
+    padding: 9px 0
+}
+textarea {
+    resize: none !important;
+    width: 100%;
+    height: 173px;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 14px 25px;
+    color: #474747;
+    background: rgb(222, 222, 222);
+    border: 1px solid #c0c0c0;
+}
+.checkbox > div:first-child {
+    padding: 5px;
+}
+.button > a{
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 8px 26px;
+    background: #000000;
+    border: 1px solid #c0c0c0;
+    color: white;
+}
+
+
+.list ul {
+    display: none;
+}
+
+.list ul:hover{
+    display: block;
+}
+
+div.contact-diachi > strong {
+    font-weight: 900;
+    font-size: 36px;
+    font-family: 'VIEGotham';
+    display: block;
+    text-align: center;
+    margin-bottom: 38px;
+    color: #000;
+}
+
+div.contact-diachi > div {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Phần thông tin sản phẩm*/
+div.image-sp {
+    margin-top: 75px;
+    display: flex;
+    position: relative;
+    color: white
+}
+
+div.image-sp > div {
+    width: 50%;
+}
+
+div.image-right-sp {
+    background: linear-gradient(white, gray,black);
+}
+
+div.image-left-sp {
+    background: linear-gradient(white, gray,black);
+}
+
+div.image-left-sp img {
+    width: 100%;
+}
+
+div.image-left-sp {
+    margin: 0;
+}
+
+div.image-right-sp img {
+    width: 100%;
+}
+
+div.image-right-sp {
+    display: block;
+}
+
+div.thumb-sp {
+    display: flex;
+}
+
+div.thumb-sp > div {
+    width: 20%;
+    padding: 1px;
+    margin: 1px;
+    background-color: white;
+}
+
+div.thumb-sp img {
+    width: 100%;
+}
+
+div.info-sp {
+    height: 60%;
+    padding: 50px 0 0 151px;
+}
+
+div.info-sp > h2 {
+    margin: 0 0 18px !important;
+    text-align:left !important;
+}
+
+div.info-sp > h1 {
+    margin: 4px 0 0;
+    text-align:left !important;
+}
+
+div.info-sp-con > p,a {
+    text-align:left !important;
+
+}
+
+div.thumb-sp {
+    position: absolute;
+    bottom: 5px;
+    padding: 0px 0 50px 151px; 
+    
+}
+
+div.info-sp-con {
+    margin: 16px 0 20px 0;
+}
+
+div.info-sp-con > a {
+    margin: 0px 170px 40px 0;
+    text-decoration: underline;
+    color: white;
+}
+
+div.icon-sp > a {
+    border: 1px solid black;
+    border-radius: 110px;
+}
+div.icon-sp > a:hover {
+    color:rgb(86, 221, 81) ;
+}
+
+div.icon-sp i {
+    padding: 5px;
+}
+
+div.icon-sp > a {
+    width: 5%;
+}
+
+div.icon-sp img {
+    width: 100%;
+}
+
+div.content-sp-1 {
+    display: flex;
+}
+
+div.content-sp-1 {
+    margin: 0px 120px;
+    padding: 100px 40px 80px 40px;
+}
+
+div.content-sp-1-con {
+    width: 50%;
+    margin: 0px 0 0 100px;
+    font-size: 18px;
+}
+
+div.content-sp-1-con > div > h2 {
+    margin: 7px 0 0 0;
+    font-size: 20px;
+}
+
+div.content-sp-1-image {
+    width: 50%;
+}
+
+div.content-sp-1-image > img {
+    width: 100%;
+}
+
+div.content-sp-2 {
+    margin: 0 120px;
+    padding: 0 40px 80px 40px;
+    display: flex;
+}
+
+div.bentrai-sp {
+    padding: 0 80px 0 70px !important;
+}
+div.content-sp-2-con {
+    width: 50%;
+    padding: 0 0 0 80px;
+    display: table;
+}
+
+div.content-sp-2-con > .loptrong {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.loptrong > p,h2 {
+    text-align: justify;
+}
+
+div.content-sp-now {
+    background-image: url(../images/olive5.png);
+    padding-top: 250px;
+    padding-bottom: 80px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f9f9f9;
+    background-position: top !important;
+}
+
+div.content-sp-now-con {
+    width: 55%;
+    margin: 0 auto;
+    line-height: 28px;
+}
+
+div.content-sp-now-con > h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.content-sp-now-con > p {
+    padding-bottom: 27px;
+}
+
+div.content-video-sp {
+    padding: 100px 0 60px 0;
+    text-align: center;
+}
+
+div.video-sp > iframe{
+    opacity: 1;
+    visibility: visible;
+    width: 600px;
+    height: 336px;
+}
+
+div.content-sp-finish {
+    width: 55%;
+    max-width: 100%;
+    margin: auto;
+    padding: 40px 0 80px 0;
+}
+
+
+/*Phần IPPG & footer*/
+div.IPPG {
+    position:relative;
+    text-align: center;
+    background-color: rgb(126, 1, 1);
+}
+div.rolex-IPPG {
+    color: white;
+    font-size: medium;
+}
+div.rolex-IPPG img {
+    width: 20%;
+}
+div.rolex-IPPG-text {
+    padding:40px 100px;
+}
+div.IPPG img {
+    padding-top: 20px;
+    width:20%;
+    top:20px;
+}
+
+div.IPPG p {
+    text-align: center;
+}
+div.sub {
+    color: black;
+}
+ul.menuduoi {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    z-index: 7;
+    display: flex;
+    position: relative;
+    justify-content:space-between;
+    min-width: auto;
+}   
+.menuduoi .subcontent {
+    display: none;
+} 
+div.IPPG .IPPG-menuduoi {
+    padding: 10px 100px 10px;
+}
+ul.menuduoi > li > a {
+    text-decoration: none;
+    display: block;
+    color:white;
+}
+ul.menuduoi > li > a:hover {
+    color:black;
+}
+.gt-thanhcuoi {
+    background-color: rgb(206, 202, 202);
+}
+ul.thanhcuoi {
+    list-style-type: none;
+    display: flex;
+}
+ul.thanhcuoi > li > a {
+    text-decoration: none;
+    justify-content: space-evenly;
+    text-align: center;
+    min-width: auto;
+}
+ul.thanhcuoi > li:last-child {
+    margin-left: auto;
+}
+
+ul.thanhcuoi > li > a {
+    color: gray;
+    padding: 20px 20px;
+    display: block;
+}
+ul.thanhcuoi > li > a.icon:hover {
+    color:rgb(126,1,1);
+}
+ul.thanhcuoi > li > a.gt-footer:hover {
+    color:black;
+}

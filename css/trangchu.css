@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+.icon_thuong_hieu > div > img {
+    width: 100%;
+}
+.icon_thuong_hieu img:hover{
+    transform: scale(1.1);
+}
+.anh > img {
+    width: 100%;
+}
+
+.icon_thuong_hieu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.thuonghieu > h1 {
+    text-align: center;
+}
+
+.iconic_hot {
+    background: url(../images/trang_chu_33.jpg) center right; 
+    background-size: cover;
+}
+
+.icon_thuong_hieu div:first-child:hover img{
+    animation: down 1s ease 1s;
+}
+
+.hieuung1 {
+    animation: up 1s ease 0.3s;
+}
+
+.hieuung2 {
+    animation: up 1s ease 0.6s;
+}
+
+.hieuung3 {
+    animation: up 1s ease 0.9s;
+}
+
+.hieuung4 {
+    animation: up 1s ease 1.2s;
+}
+
+.hieuung5 {
+    animation: up 1s ease 1.5s;
+}
+
+.hieuung6 {
+    animation: up 1s ease 1.8s;
+}
+
+.hieuung7 {
+    animation: up 1s ease 2.1s;
+}
+
+.hieuung8 {
+    animation: up 1s ease 2.4s;
+}
+
+.hieuung9 {
+    animation: up 1s ease 2.7s;
+}
+
+.hieuung10 {
+    animation: up 1s ease 3s;
+}
+
+.hieuung11 {
+    animation: up 1s ease 3.3s;
+}
+
+.hieuung12 {
+    animation: up 1s ease 3.6s;
+}
+
+.hieuung13 {
+    animation: up 1s ease 3.9s;
+}
+
+.hieuung14 {
+    animation: up 1s ease 4.2s;
+}
+
+.hieuung15 {
+    animation: up 1s ease 4.5s;
+}
+
+.hieuung16 {
+    animation: up 1s ease 4.8s;
+}
+
+.hieuung17 {
+    animation: up 1s ease 5.1s;
+}
+
+.hieuung18 {
+    animation: up 1s ease 5.4s;
+}
+
+.hieuung19 {
+    animation: up 1s ease 5.7s;
+}
+
+.hieuung20 {
+    animation: up 1s ease 6s;
+}
+
+.hieuung21 {
+    animation: up 1s ease 6.3s;
+}
+
+.hieuung22 {
+    animation: up 1s ease 6.6s;
+}
+
+.hieuung23 {
+    animation: up 1s ease 6.9s;
+}
+
+.hieuung24 {
+    animation: up 1s ease 7.2s;
+}
+
+.hieuung25 {
+    animation: up 1s ease 7.5s;
+}
+
+.hieuung26 {
+    animation: up 1s ease;
+}
+
+
+
+@keyframes up {
+    0% {
+        transform: translateY(100px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes down {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.icon_thuong_hieu > div {
+    width: 20%;
+}
+div.news {
+    display: flex;
+}
+
+.iconic_hot{
+    position: relative;
+    width: 100%;
+}
+.chu_iconic > p1{
+    left: 10px;
+    bottom: 50px;
+    position: absolute;
+    color: white    ;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 4;
+}
+.chu_iconic > p2{
+    left: 10px;
+    bottom: 170px;
+    position: absolute;
+    color: white    ;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 4;
+}
+.chu_iconic > strong{
+    left: 10px;
+    bottom: 10px;
+    position: absolute;
+    color: white;
+    font-size: 33px;
+    width: 500px;
+    z-index: 4;
+}
+.iconic_hot > img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.slide_go{
+    position: relative;
+}
+.go_thong_tin{
+    z-index: 3;
+    top: 50%;
+    left:650px; 
+}
+
+.slide_go > img {
+    width: 100%;
+}
+
+.go_thong_tin {
+    position: absolute;
+    z-index: 3;
+    top: 100px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    left: 25%;
+}
+
+.go_thong_tin > img{
+    width: 300px;
+}
+
+.thong_tin {
+    display: block;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.khung_gioithieu {
+    margin-top: 10px;
+}
+
+.khung_gioithieu > a {
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.khung_gioithieu:hover {
+    transform: scale(1.5);
+}
+
+.ban_tin{
+    background: url(../images/trang_chu_34.jpg);
+}
+
+.ban_tin > label {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    line-height: 1.5;
+    font-size: 18px;
+    letter-spacing: 8px;
+    display: block;
+    text-align: center;
+}
+
+.ban_tin > p {
+    line-height: 1.3;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.ban_tin > p#dangki {
+    font-weight: bolder;
+}
+
+.dk-email {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+input[type="email"] {
+    width: 70%;
+    border: 2px solid rgb(126, 1, 1);
+}
+
+input[type="button"] {
+    width: 25%;
+    background-color: rgb(126, 1, 1);
+    border: 2px solid white;
+}
