@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="images/favicon.png" rel="shortcut icon">
+        <title>DAFC - Công ty TNHH Thời trang và Mỹ phẩm Duy Anh</title>
+        <meta name="description" content="Nhà phân phối thời trang cao cấp hàng đầu tại Việt Nam gồm các thương hiệu nổi tiếng như Bally, Burberry, Cartier, Tumi, Salvatore Feragarmo, v.v..">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/stylemenu.css"/>
+        <link rel="stylesheet" href="./jQuery/script.js"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+           
+        </style>
+        <script>
+            $(document).ready(function() {
+                $("div.rolex-menu-content div.point:not(:first-child)").hide()
+
+                $("ul.rolex-menu li a").click(function() {
+                    event.preventDefault()
+                    //xu ly tab
+                    $("ul.rolex-menu li a").removeClass("active")
+                    $(this).addClass("active")
+                    
+                    //xu ly noi dung
+                    var tab = $(this).attr("href")
+                    $(".rolex-menu-content div.point").hide()
+                    $(tab).show()
+                })
+            })
+            $(document).ready(function() {
+                //an
+                $("#goOnTop").hide()
+
+                //xu ly truot 
+                $(window).scroll(function() {
+                    console.info(Math.random())
+                    if ($(window).scrollTop() >= 300)
+                        $("#goOnTop").show("slow")
+                    else 
+                        $("#goOnTop").hide("slow")
+                })
+
+                $("#goOnTop").click(function() {
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 3000);
+                })
+
+            })
+        </script>
+    </head>
+    <body id="rolex">
+        <header >
+            <nav>  
+                <ul class="menu">
+                    <li >
+                        <a href="Trangchu.html"><img src="images/LogoDAFC_Red.png" ></a>
+                    </li>
+                    <li><a href="gioithieu1.html" rel="_blank">GIỚI THIỆU</a></li>
+                    <li class="sub">
+                        <a> THƯƠNG HIỆU 
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                            <ul class="subcontent">
+                                <li><a href="#">ASH</a></li>
+                                <li><a href="#">BULMAIN</a></li>
+                                <li><a href="#">ELISABETTA FRANCHI</a></li> 
+                                <li><a href="#">JIMMY CHOO</a></li>
+                                <li><a href="#">JUST CAVALLI</a></li>      
+                                <li><a href="#">LIU JO</a></li> 
+                                <li><a href="#">MAISON MICHEL</a></li>               
+                                <li><a href="#">MARCHESA</a></li>    
+                                <li><a href="#">TUDOR</a></li>    
+                                <li><a href="#">TUMI</a></li>
+                            </ul>
+                    </li>
+                    <li><a  href="rolexmoi.html">ROLEX</a></li>
+                    <li><a  href="#">TUYỂN DỤNG</a></li>
+                    <li><a  href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="page-rolex">
+            <div>
+                <ul class="rolex-menu">
+                    <li>
+                        <a href="#tab1"><img src="images/logoRolex.jpg"></a>
+                    </li>
+                    <li><a href="#tab1" class="active">Rolex Tại DAFC</a></li>
+                    <li><a href="#tab2">Đồng hồ mới 2021</a></li>
+                    <li><a href="#tab3">Bảo Dưỡng Đồng Hồ</a></li>
+                    <li><a href="#tab4">Lịch Sử</a></li>
+                </ul>
+            </div>
+            <div class="rolex-menu-content">
+                <div class="point" id="tab1">
+                    <div class="image " >
+                        <img src="images/banner1.rolex.jpg" alt="banner-xs_datejust-36_portrait"/>
+                    </div>
+                    <div class="new-content">
+                        <div class="image">
+                            <h2>Trải Nghiệm Sản Phẩm Của Rolex</h2>
+                            <h1>ĐỒNG HỒ ROLEX</h1>
+                            <p>Đồng hồ rolex được chế tác từ các nguyên liệu tốt nhất và lắp ráp tỉ mỉ đến từng chi tiết. Mỗi chi tiết được thiết kế, phát triển, và sản xuất với tiêu chuẩn chính xác nhất.</p>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="items">
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex1.jpg" alt="Rolex Datejust" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>DATEJUST</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex2.jpg" alt="Rolex GMT-MASTER II" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>GMT-MASTER II</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex3.jpg" alt="Rolex DAY-DATE" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>DAY-DATE</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex4.jpg" alt="Rolex SUBMARINER" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>SUBMARINER</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex5.jpg" alt="Rolex OYSTER PERPETUAL" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>OYSTER PERPETUAL</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex6.jpg" alt="Rolex COSMOGRAPH DAYTONA" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>COSMOGRAPH DAYTONA</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex7.jpg" alt="Rolex YACHT-MASTER" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>YACHT-MASTER</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex8.jpg" alt="Rolex LADY-DATEJUST" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>LADY-DATEJUST</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex9.jpg" alt="Rolex SEA-DWELLER" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>SEA-DWELLER</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex10.jpg" alt="Rolex EXPLORER" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>EXPLORER</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex11.jpg" alt="Rolex SKY-DWELLER" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>SKY-DWELLER</p>
+                                </div>
+                            </div>
+                            <div class="item-con">
+                                <div>
+                                    <div>
+                                        <img src="images/Rolex12.jpg" alt="Rolex MILGAUSS" />
+                                    </div>
+                                    <h3>Rolex</h3>
+                                    <p>MILGAUSS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="collects" >
+                        <h4>Bộ sưu tập tiêu biểu</h4>
+                        <div class="collect" >
+                            <div class="nam">
+                                <img src="images/rolexnam.jpg" alt="mens-watches_gmt_master" />
+                                <h4>ĐỒNG HỒ NAM ROLEX</h4>
+                            </div>
+                            <div class="nu">
+                                <img src="images/rolexnu.jpg" alt="womens-watches_lady_datejust_portrait"/>
+                                <h4>ĐỒNG HỒ NỮ ROLEX</h4>
+                            </div>
+                        </div>
+                        <div class="vang">
+                            <img src="images/rolexvang.jpg" alt="gold-watches_portrait"/>
+                            <h4>ĐỒNG HỒ VÀNG ROLEX</h4>
+                        </div>
+                        <div class="chung">
+                            <img src="images/rolexchung.webp" alt="experience-a-rolex-1" />
+                            <h4>THAM QUAN CHÚNG TÔI TẠI CỬA HÀNG</h4>
+                            <p>DAFC tự hào là một phần của mạng lưới các Nhà bán lẻ Rolex chính thức trên toàn thế giới, được phép bán và bảo trì Đồng hồ Rolex. Tại DAFC, chúng tôi luôn sẵn sàng phục vụ bạn để giúp bạn chọn được chiếc đồng hồ Rolex phù hợp nhất với bạn, trong rất nhiều loại đồng hồ Rolex. [Các] cửa hàng của chúng tôi tại Hà Nội và Thành phố Hồ Chí Minh được công nhận là Nhà bán lẻ Rolex chính thức vì chúng tôi chỉ bán những chiếc đồng hồ Rolex đảm bảo.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="point" id="tab2">
+                    <div class="image" >
+                        <img src="images/new.webp" alt="banner-xs_datejust-36_portrait"/>
+                    </div>
+                    <div class="new-content">
+                        <div class="image">
+                            <h2>ĐỒNG HỒ ROLEX</h2>
+                            <h1>ĐỒNG HỒ MỚI 2021</h1>
+                            <p>Mẫu Explorer mới, ra mắt phiên bản Rolesor vàng, kết hợp giữa thép Oystersteel và vàng 18ct. Mẫu Explorer II mới làm bằng thép Oystersteel có vỏ và dây đeo được tái thiết kế. Maaazu Datejust 36 mới mang sắc kim loại sống động cho mặt số mới, trong khi ba phiên bản mới của dòng Cosmograph Daytona được chế tác từ vằng 18ct phối với mặt đồng hồ thiên thạch. Tôn lên vẻ rạng rỡ của kim cương, mẫu Lady-Datejust mới được đính 1.089 viên kim cương được cắt gọt sáng chói.</p>
+                        </div>
+                        <div class="new-item">
+                            <div>
+                                <a href="sanpham.html"><img src="images/new1.2.png" alt="Explorer"/></a>
+                            </div>
+                            <a><h1>EXPLORER</h1></a>
+                        </div>
+                        <div class="new-item1" > 
+                            <div class="new-itemcon">
+                                <a href="sanpham.html">
+                                    <img src="images/new2.2.png" alt="Explorer II"/>
+                                </a>
+                                <a><h1>EXPLORER II</h1></a>
+                            </div>
+                            <div class="new-itemcon">
+                                <a href="sanpham.html">
+                                    <img src="images/new3.2.png" alt="DATEJUST 36"/>
+                                </a>
+                                <a><h1>DATEJUST 36</h1></a>
+                            </div>
+                            <div class="new-itemcon">
+                                <a href="sanpham.html">
+                                    <img src="images/new4.2.png" alt="COSMOGRAPH DAYTONA"/>
+                                </a>
+                                <a><h1>COSMOGRAPH DAYTONA</h1></a>
+                            </div>
+                            <div class="new-itemcon"> 
+                                <a href="sanpham.html">
+                                    <img src="images/new1.2.png" alt="LADY-DATEJUST"/>
+                                </a>
+                                <a><h1>LADY-DATEJUST</h1></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/new5.webp" alt="ROLEX EXPLORER"/>
+                    </div>
+                </div>
+                <div class="point" id="tab3">
+                    <div class="image" >
+                        <img src="images/baoduong.webp" alt="servicing-your-rolex-cover-1-scaled"/>
+                    </div>
+                    <div class="new-content">
+                        <div class="image">
+                            <h2>Sáng Tạo Để Trường Tồn</h2>
+                            <h1>ĐẢM BẢO VỀ ĐỘ BỀN</h1>
+                            <p>Đồng hồ Rolex được thiết kế và sáng tạo để trường tồn. Từ khi hình thành concept một chiếc đồng hồ Rolex cho đến khi xuất xưởng, mỗi bước phát triển và sản xuất đều tuân theo một yêu cầu quan trọng duy nhất: chất lượng. Chính vì vậy, đồng hồ Rolex không giới hạn về thời gian hoạt động, chúng sẽ được truyền từ thế hệ này sang thế hệ khác, trải qua nhiều cuộc đời.</p>
+                        </div>
+                        <div class="new-item">
+                            <img src="images/baoduong1.webp" alt="servicing-your-rolex-authorised-service-centre-1"/>
+                        </div>
+                        <div class="image">
+                            <h1>HÃY ĐỂ CHUYÊN GIA HƯỚNG DẪN BẠN</h3>
+                            <p>Qua nhiều năm hoạt động, chiếc đồng hồ của bạn xứng đáng được chăm sóc một cách phù hợp nhất. Là Trung tâm bảo hành được ủy quyền của Rolex, DAFC cam kết cung cấp cho bạn dịch vụ hậu mãi hạng nhất. Nhờ các tiêu chuẩn và chuyên môn cao của các nghệ nhân chế tác đồng hồ, đồng hồ Rolex của bạn sẽ tiếp tục vận hành các chức năng theo thời gian với độ tin cậy vượt trội và vẻ đẹp tuyệt vời.</p>
+                        </div>
+                    </div>
+                        <div class="item-value background-color" >
+                            <figure class="image-content image-special">
+                                <img src="images/baoduong2.webp" alt="servicing-your-rolex-verification_portrait"/>
+                            </figure>    
+                            <div class="text content-left">
+                                <div class="text" >
+                                    <div class="image color-font">
+                                        <h3>HÃY ĐỂ CHUYÊN GIA HƯỚNG DẪN BẠN</h3>
+                                        <p>Qua nhiều năm hoạt động, chiếc đồng hồ của bạn xứng đáng được chăm sóc một cách phù hợp nhất. Là Trung tâm bảo hành được ủy quyền của Rolex, DAFC cam kết cung cấp cho bạn dịch vụ hậu mãi hạng nhất. Nhờ các tiêu chuẩn và chuyên môn cao của các nghệ nhân chế tác đồng hồ, đồng hồ Rolex của bạn sẽ tiếp tục vận hành các chức năng theo thời gian với độ tin cậy vượt trội và vẻ đẹp tuyệt vời.</p>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="item-value-2">
+                            <div class="item-value item-value-1">
+                                <figure class="image-content">
+                                    <img src="images/baoduong3.webp" />
+                                </figure>
+                                <div class="text content-right">
+                                    <div class="text copy">
+                                        <h4>BẢO DƯỠNG ĐỒNG HỒ ROLEX CỦA BẠN TẠI DAFC</h4>
+                                        <p>DAFC tự hào là một phần của mạng lưới toàn cầu gồm các nhà sản xuất đồng hồ được Rolex đào tạo, lựa chọn cẩn thận, với sự chuyên nghiệp và tiêu chuẩn chuyên môn không ngừng cải tiến. Chúng tôi tuân thủ Quy trình bảo dưỡng của Rolex nhằm đảm bảo mỗi chiếc đồng hồ Rolex xuất xưởng đều đạt tiêu chuẩn về đặc điểm chức năng và mặt thẩm mỹ ban đầu của sản phẩm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-value item-value-1">
+                                <div class="text content-left">
+                                    <div class="text copy">
+                                        <h4>QUY TRÌNH BẢO DƯỠNG CỦA ROLEX</h4>
+                                        <p>Quy trình bảo dưỡng của Rolex được thiết kế nhằm đảm bảo mỗi chiếc đồng hồ Rolex xuất xưởng đều đáp ứng thông số kỹ thuật về chức năng và tính thẩm mỹ ban đầu của sản phẩm. Trong quá trình bảo dưỡng, mỗi máy sẽ được đại tu hoàn toàn, vỏ và dây đeo được đánh bóng lại một cách tỉ mỉ nhằm khôi phục độ bóng. Độ chính xác về thời gian và khả năng chịu nước được kiểm tra nghiêm ngặt nhằm đảm bảo chất lượng và độ tin cậy mà bạn kỳ vọng từ một chiếc đồng hồ Rolex.</p>
+                                    </div>
+                                </div>
+                                <figure class="image-content">
+                                    <img src="images/baoduong4.webp" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="item-value-3">
+                            <img src="images/baoduong5.webp" />
+                        </div>
+                </div>
+                <div class="point" id="tab4">
+                    <div class="image" >
+                        <img src="images/lichsu1.jpg" alt="rolex-dafc-history-banner-desktop"/>
+                    </div>
+                    <div class="image item-value-2">
+                        <h3>Rolex Vietnam Và DAFC</h3>
+                        <h2>VỀ CHÚNG TÔI</h2>
+                        <p>Được thành lập vào năm 2005 tại Thành Phố Hồ Chí Minh, công ty TNHH Thời Trang và Mỹ Phẩm Duy Anh (DAFC) đã bắt đầu sứ mệnh giới thiệu và phát triển các thương hiệu cao cấp nhất tại VIệt Nam. DAFC hiện là công ty hàng đầu trong việc phân phối và bán lẻ các thương hiệu thời trang xa xỉ, trang sức và đồng hồ cao cấp. Đem đến nhiều thương hiệu cao cấp nổi tiếng trên thế giới đến các địa điểm lịch sử mang tính biểu tượng ngay tại trung tâm thành phố Hồ Chí Minh và thủ đô Hà Nội. Với vốn kiến thức sâu rộng về khách hàng cũng như thị trường tại Việt Nam. DAFC không ngừng đem đến các trải nghiệm không gian mua sắm sang trọng cùng dịch vụ chăm sóc khách hàng bậc nhất Việt Nam</p>
+                    </div>
+                    <div class="item-value-2">
+                        <div class="item-value item-value-1">
+                            <figure class="image-content">
+                                <img src="images/lichsu2.jpg" />
+                            </figure>
+                            <div class="text content-right">
+                                <div class="text copy">
+                                    <h4>VƯƠNG TRIỀU XA XỈ</h4>
+                                    <p>Được thành lập tại thành phố Hồ Chí Minh – tên gọi cũ là Sài Gòn, DAFC là một thành viên thuộc tập đoàn Liên Thái Bình Dương (Imex Pan Pacific – IPPG). Dẫn dắt bởi cặp đôi quyền lực trong ngành thời trang Việt Nam là Chủ Tịch Hội ĐồngThành Viên- ông Johnathan Hạnh Nguyễn và Tổng Giám Đốc – bà Lê Hồng Thủy Tiên. Tập đoàn IPPG chiếm phần lớn thị phần đồng hồ, trang sức và thời trang xa xỉ tại Việt Nam. Với những trải nghiệm không gian và dịch vụ mua sắm cao cấp nhất cho khách hàng.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-value item-value-1">
+                            <div class="text content-left">
+                                <div class="text copy">
+                                    <h4>CỘT MỐC ĐÁNG NHỚ</h4>
+                                    <p>Là chuyên gia trong ngành bán lẻ nhằm đảm bảo và giám sát chặt chẽ cho các đối tác, DAFC thường xuyên giới thiệu các cơ hội kinh doanh mới đầy tính chiến lược để mang lại trải nghiệm cao cấp cho thị trường Việt Nam. Cùng lúc đó, chúng tôi bắt đầu hợp tác cùng Rolex vào năm 2010 và trở thành nhà bán lẻ chính thức của Rolex tại Việt Nam. Cửa hàng Rolex đầu tiên tọa lạc tại khách sạn Rex – đường Lê Lợi. Đây cũng chính là một trong những khu mua sắm bậc nhất Việt Nam.</p>
+                                </div>
+                            </div>
+                            <figure class="image-content">
+                                <img src="images/lichsu3.jpg" />
+                            </figure>
+                        </div>
+                        <div class="item-value item-value-1">
+                            <figure class="image-content">
+                                <img src="images/lichsu4.jpg" />
+                            </figure>
+                            <div class="text content-right">
+                                <div class="text copy">
+                                    <h4>DẤU ẤN ROLEX GIỮA LÒNG HÀ NỘI</h4>
+                                    <p>Vào năm 2013, khi DAFC tiếp tục tăng cường mối quan hệ đối tác cùng Rolex, chúng tôi đã đưa Rolex đến thủ đô Hà Nội với mong muốn đem đến trải nghiệm mua sắm và dịch vụ sang trọng cho người dân Hà Nội. Nằm ngay trung tâm thương mại Tràng Tiền Plaza, một địa danh mang tính biểu tượng của Pháp và cũng là trung tâm mua sắm sang trọng đầu tiên tại Hà Nội. Cửa hàng Rolex thứ hai đã đem đến sự sang trọng, thanh lịch và tinh tế để khách hàng có thể tự do cảm nhận bộ sưu tập đồng hồ Rolex.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-value background-color" >     
+                        <div class="text content-left">
+                            <div class="text" >
+                                <div class="image color-font">
+                                    <h3>HÃY ĐỂ CHUYÊN GIA HƯỚNG DẪN BẠN</h3>
+                                    <p>Qua nhiều năm hoạt động, chiếc đồng hồ của bạn xứng đáng được chăm sóc một cách phù hợp nhất. Là Trung tâm bảo hành được ủy quyền của Rolex, DAFC cam kết cung cấp cho bạn dịch vụ hậu mãi hạng nhất. Nhờ các tiêu chuẩn và chuyên môn cao của các nghệ nhân chế tác đồng hồ, đồng hồ Rolex của bạn sẽ tiếp tục vận hành các chức năng theo thời gian với độ tin cậy vượt trội và vẻ đẹp tuyệt vời.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <figure class="image-content image-special1">
+                        </figure>
+                    </div>
+                </div>
+            </div> 
+            <div class="item-con-info-lopngoai">
+                <div class="item-con-info">
+                    <div class="item-con-info-image">
+                        <img src="images/Rolex1.jpg" alt="Rolex Datejust"/>
+                    </div>
+                    <div class="item-con-info-con">
+                        <h2>Rolex Datejust</h2>
+                        <h1>DATEJUST 36</h1>
+                        <p>Oyster, 36 mm, Oystersteel<br>
+                        Price: VND 180,780,000</p>
+                        <br>
+                        <input type="button" value="ĐẶT HÀNG"/>
+                    </div>
+                </div>
+            </div>
+            <div class="rolex-goOnTop">
+                <a id="goOnTop">
+                    <img src="images/new6.1.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="IPPG rolex-IPPG">
+            <div class="rolex-IPPG-text" >
+                <img src="images/LogoDAFC_Gold.png"/>
+                    <p>Một công ty thành viên của Imex Pan Pacific Group</p>
+                    <div class="IPPG-menuduoi">
+                        <hr size="0.5" color="white">
+                        <ul class="menuduoi">
+                            <li class="sub">
+                                <a> THƯƠNG HIỆU
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                                    <ul class="subcontent">
+                                        <li><a href="#">ROLEX</a></li>
+                                        <li><a href="#">ARMANI EXCHANGE</a></li>
+                                        <li><a href="#">ARMANI EXCHANGE</a></li>
+                                            
+                                    </ul>
+                            </li>
+                            <li><a  href="http://127.0.0.1:5500/gioithieu.html" rel="_blank">GIỚI THIỆU</a></li>
+                            <li><a  href="rolexmoi.html">ROLEX</a></li>
+                            <li><a  href="#">TUYỂN DỤNG</a></li>
+                            <li><a  href="lienhe.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <footer>
+            <div class="gt-thanhcuoi">
+                <ul class="thanhcuoi">
+                    <li>
+                        <a class="icon" href="https://www.facebook.com/DAFC.company/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon" href="https://www.instagram.com/dafc_co/" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="thanhcuoi-text">
+                        <a class="gt-footer"  href="">Câu hỏi thường gặp</a> 
+                    </li>
+                    <li class="thanhcuoi-text">
+                        <a class="gt-footer"  href="">Sitemap</a> 
+                    </li>
+                    <li class="thanhcuoi-text">
+                        <a class="gt-footer"  href="">Quy định bảo mật</a> 
+                    </li>
+                    <li class="thanhcuoi-text">
+                        <a class="gt-footer"  href="">Điều khoản và điều lệ</a> 
+                    </li>
+                    <li>
+                        <a class="gt-footer"  href="">Điều khoản sử dụng cookies</a> 
+                    </li>
+                    <li>
+                        <a>Bản quyền 2017 DAFC</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
